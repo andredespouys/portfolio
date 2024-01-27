@@ -1,18 +1,26 @@
-# Vue 3 + TypeScript + Vite
+# Dede's Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to my awesome portfolio! 👋
 
-## Recommended IDE Setup
+## Overview
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+This portfolio is developed using Vue.js, Typescript, and Vite to showcase my skills, projects, and experiences as a full-stack web developer. It's not just a website; it's a representation of my journey and passion for creating meaningful and impactful digital experiences.
 
-## Type Support For `.vue` Imports in TS
+## Technologies Used
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- Vue.js
+- Typescript
+- Vite
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Features
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- **Responsive Design**: Ensuring a seamless experience across various devices.
+- **Projects Showcase**: Highlighting the diverse range of projects I've worked on.
+- **Skills Section**: Displaying my proficiency in web development technologies.
+- **Contact Information**: Making it easy for others to reach out to me.
+
+## How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone [your_repository_url]
