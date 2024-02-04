@@ -1,26 +1,39 @@
 <script setup lang="ts">
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
+
 import { socialLinks } from '../data/socialLinks.js';
 
-import { onMounted, onUpdated,  defineProps } from 'vue';
+import { onMounted, onUpdated , ref} from 'vue';
+const theme = ref('');
 
 const props = defineProps(['showModal', 'modal']);
 const socials = socialLinks;
 onMounted(() => {
+	theme.value = localStorage.getItem('theme') || 'light';
+
   feather.replace();
   console.log("Modal value: ", props.modal)
 });
 
 onUpdated(() => {
   feather.replace();
+  if (
+    theme.value === 'dark'
+) {
+    console.log('dark');
+    document.querySelector('body')!.classList.add('bg-primary-dark');
+} else {
+    console.log('light');
+    document.querySelector('body')!.classList.add('bg-secondary-light');
+}
 });
 
 </script>
 
 <template>
 	<transition name="fade">
-		<div v-show="modal" class="font-general-regular fixed inset-0 z-30">
+		<div v-show="modal"  class= "font-general-regular fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
@@ -34,7 +47,7 @@ onUpdated(() => {
 				<transition name="fade-up-down">
 					<div
 						v-show="modal"
-						class="modal-wrapper h-64 w-1/3 mx-auto flex flex-col justify-around items-center p-5 z-30 bg-white"
+						:class="[theme === 'dark' ? 'bg-primary-dark' : 'bg-secondary-light','modal-wrapper', ' h-64',  'w-1/3 ', 'mx-auto', 'flex',  'flex-col', 'justify-around' ,'items-center' ,'p-5' , 'z-30' ]"
 					>
 
 							<div
