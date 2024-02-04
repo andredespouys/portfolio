@@ -64,13 +64,13 @@ function showModal() {
 					<router-link to="/"
 						><img
 							v-if="theme === 'light'"
-							src="@/assets/images/logo-dark.svg"
+							src="/images/logo-dark.svg"
 							class="w-36"
 							alt="Dark Logo"
 						/>
 						<img
 							v-else
-							src="@/assets/images/logo-light.svg"
+							src="/images/logo-light.svg"
 							class="w-36"
 							alt="Light Logo"
 						/>
