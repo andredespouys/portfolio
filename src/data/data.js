@@ -17,7 +17,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'orange-project-image1',
-				img: '../src/assets/images/orange-project1.jpg',
+				img: '/images/orange-project1.jpg',
 			},
 		],
 		technologies: [
@@ -51,7 +51,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'botium-project-image1',
-				img: '../src/assets/images/botium-toys-1.jpg',
+				img: '/images/botium-toys-1.jpg',
 			},
 		],
 		summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
@@ -84,7 +84,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'lvmh-project-image1',
-				img: '../src/assets/images/lvm-laptop.png',
+				img: '/images/lvm-laptop.png',
 			},
 		],
 		summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
@@ -118,7 +118,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'gendarmerie-project-image1',
-				img: '../src/assets/images/gendarmerie.jpg',
+				img: '/images/gendarmerie.jpg',
 			},
 		],
 		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
@@ -152,7 +152,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'incident-response-image1',
-				img: '../src/assets/images/incident-report.jpg',
+				img: '/images/incident-report.jpg',
 			},
 		],
 		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
@@ -185,7 +185,7 @@ const projects = [
 			{
 				id: 1,
 				title: 'd-teye-image1',
-				img: '../src/assets/images/d-teye.png',
+				img: '/images/d-teye.png',
 			},
 		],
 		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",

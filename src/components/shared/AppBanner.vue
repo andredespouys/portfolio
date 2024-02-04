@@ -18,8 +18,8 @@ onUpdated(() => {
 	<section class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10">
 		<!-- Banner left illustration -->
 		<div class="w-full md:w-1/2 text-right float-right">
-			<img v-if="theme === 'light'" src="@/assets/images/memoji-laptop.png" alt="Developer" />
-			<img v-else src="@/assets/images/memoji-laptop.png" alt="Developer" />
+			<img v-if="theme === 'light'" src="/images/memoji-laptop.png" alt="Developer" />
+			<img v-else src="/images/memoji-laptop.png" alt="Developer" />
 		</div>
 		<!-- Banner left contents -->
 		<div class="w-full md:w-2/3 text-left">
