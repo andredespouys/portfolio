@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.bg-primary-dark {
+    background-color: #0d2438;
+    color: white;
+}
+.bg-secondary-light {
+    background-color: white;
+    color: #0d2438;
+}

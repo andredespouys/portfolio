@@ -1,0 +1,38 @@
+<script>
+export default {
+	props: ['header'],
+};
+</script>
+
+<template>
+	<div>
+		<!-- Project heading and meta info -->
+		<p
+			class="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mb-7"
+		>
+			{{ header.title }}
+		</p>
+		<div class="flex">
+			<div class="flex items-center mr-10">
+				<i
+					data-feather="clock"
+					class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+				></i>
+				<span
+					class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
+					>{{ header.date }}</span
+				>
+			</div>
+			<div class="flex items-center">
+				<i
+					data-feather="tag"
+					class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+				></i>
+				<span
+					class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
+					>{{ header.tag }}</span
+				>
+			</div>
+		</div>
+	</div>
+</template>
