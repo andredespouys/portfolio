@@ -20,40 +20,19 @@ onUpdated(() => {
 </script>
 
 <template>
-  <!-- <div id="app"> -->
     <div :class="appTheme" class="p-20 mx-auto w-full xl:max-w-screen-xl ">
 		<!-- App header -->
 		<AppHeader />
-<!-- 
-		Render active component contents with vue transition
-		<transition name="fade" mode="out-in">
-			<router-view :theme="appTheme" />
-		</transition> -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
 
-		<!-- Scroll to top -->
-		<back-to-top
-			visibleoffset="500"
-			right="50px"
-			bottom="50px"
-			class="shadow-lg"
-		>
-			<i data-feather="chevron-up"></i>
-		</back-to-top>
-
 		<!-- App footer -->
 		<AppFooter />
 	</div>
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/projects">Projects</router-link> |
-    <router-link to="/about">About</router-link>
 
-    <router-view /> -->
-  <!-- </div> -->
 </template>
 
 <style>

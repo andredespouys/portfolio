@@ -23,12 +23,11 @@ onUpdated(() => {
 		</div>
 		<!-- Banner left contents -->
 		<div class="w-full md:w-2/3 text-left">
-			<h1 class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase">
+			<h1 class="font-general-semibold text-4xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase">
 				Hi, I am André
 			</h1>
-			<p class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400">
-				A web developer and future security analyst
-			</p>
+			<h2 class="font-general-bold text-3xl text-center sm:text-left text-ternary-dark dark:text-primary-light ">
+				A passionate of the web and a future security analyst.			</h2>
 			<div class="flex justify-center sm:block">
 				<a
 					download="André-Resume.pdf"
