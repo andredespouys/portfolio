@@ -20,7 +20,7 @@ onUpdated(() => {
 </script>
 
 <template>
-    <div :class="appTheme" class="p-20 mx-auto w-full xl:max-w-screen-xl ">
+    <div :class="appTheme" class="p-10 md:p-20 mx-auto w-full xl:max-w-screen-xl  ">
 		<!-- App header -->
 		<AppHeader />
     <router-view v-slot="{ Component }">

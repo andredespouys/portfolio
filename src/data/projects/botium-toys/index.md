@@ -1,10 +1,10 @@
-### The context of this project 🧑🏻‍💻
+## The context of this project 🧑🏻‍💻
 
 This is a fictional Business Security Audit of a fictional business called "Botium Toys" as part of one of my current Google Cybersecurity Certificate Practical Modules.
 
 The following text is a representation of a security audit after detecting the organization's assets, threats, vulnerabilities and risks and with them, create the following audit.
 
-### Botium Toys Security Audit
+## Botium Toys Security Audit
 
 **TO**: IT Manager, Stakeholders<br>
 **FROM**: Despouys André<br>

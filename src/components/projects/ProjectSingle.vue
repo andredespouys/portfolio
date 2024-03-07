@@ -23,12 +23,12 @@ export default {
 		</div>
 		<div class="text-center px-4 py-6">
 			<p
-				class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
+				class="title font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
 			>
 				{{ project.header.title }}
 			</p>
 			<span
-				class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
+				class="category font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
 				>{{ project.header.category }}</span
 			>
 		</div>

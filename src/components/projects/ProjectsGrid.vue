@@ -3,7 +3,6 @@ import { ref, onMounted, Ref ,computed, onBeforeMount} from 'vue';
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
-import projectsPaths from '../../data/projects.json';
 import { marked } from 'marked';
 import projects from '../../data/data.js';
 
@@ -19,16 +18,13 @@ onBeforeMount(() => {
 	const fetchData = async () => {
 	try {
 		const projectsData = await Promise.all(
-		projectsPaths.map(async (project) => {
+			projects.map(async (project) => {
 			const response = await fetch(project.path);
 			if (!response.ok) {
 			throw new Error(`Failed to fetch ${project.path}`);
 			}
-
 			const markdownContent = await response.text();
 			const content = marked(markdownContent);
-			// console.log('htmlContent', content);
-
 			return {
 			content,
 			} as ProjectContent;

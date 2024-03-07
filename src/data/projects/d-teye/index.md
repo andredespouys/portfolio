@@ -1,13 +1,13 @@
 
-## The context 🧑🏻‍💻
+### The context 🧑🏻‍💻
 
 Each year my University: University Institute of Technology - <a href="https://www.iut.u-bordeaux.fr/general/" style="text-decoration:underline;color:blue">**IUT Bordeaux Montaigne </a>** and the <a href="https://www.musba-bordeaux.fr/" style="text-decoration:underline;color:blue">**Musée de Beaux Arts de Bordeaux</a>** create an special night where the digital world and art come together called <a href="https://www.u-bordeaux-montaigne.fr/fr/actualites/culture/bacchanight-8-nocturne-au-musee-des-beaux-arts-une-soiree-par-et-pour-les-etudiants.html" style="text-decoration:underline;">**Bacchanight**</a>. The purpose of this event is to invite students to revisit and reinterpret the museum's permanent collections and temporary exhibitions and in our case, doing it using the digital world.
 
-## What did we develop? 🤓
+### What did we develop? 🤓
 
 With my group called <a href="https://allela-ed132b.webflow.io/" style="text-decoration:underline;color:blue">Allela</a> (also a freelance collective), we developed D-Teye.
 
-What’s that?
+<b>What’s that?</b>
 
 It consisted of a web application developed on **Next.js and TailwindCSS**, the story behind was that a malware infected the event and reinterpreted (at its manner) two different paintings from the museum and created **“fake”** stories of them.
 
@@ -16,7 +16,7 @@ The storytelling takes you to find the differences between the original painting
 ![This is the alt tag.](../../images/d-teye2.png "Mockup created with Figma.")
 
 
-## What did I learn? 🧐
+### What did I learn? 🧐
 
 In this project I  learned to develop a web application using **Next.js**, knowing that I haven’t coded before with this framework, it was a real challenge to learn and develop almost at the same time and finish the project on time for presentation.
 
@@ -33,4 +33,4 @@ The experience was incredible,  I learned a lot and probably will be a **Part II
 ![This is the alt tag.](../../images/d-teye3.png "Mockup created with Figma.")
 
 
-## Stay tuned for more!
+### Stay tuned for more!

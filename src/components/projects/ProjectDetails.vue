@@ -20,9 +20,9 @@ export default {
 			<!-- Single project client details -->
 			<div class="mb-7 w-full">
 				<p
-					class="font-general-medium text-2xl text-secondary-dark dark:text-secondary-light mb-2"
+					class="font-bold font-general-medium text-2xl text-secondary-dark dark:text-secondary-light mb-2"
 				>
-					{{ project.header.title }}
+					Summary:
 				</p>
 			</div>
 
@@ -38,15 +38,19 @@ export default {
 			<!-- Single project technologies -->
 			<div class="mb-7">
 				<p
-					class="font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
+					class="font-bold font-general-medium text-2xl text-ternary-dark dark:text-ternary-light mb-2"
 				>
-					{{ project.technologies[0].title }}
+					{{ project.technologies[0].title }}:
 				</p>
-				<p
-					class="font-general-regular text-primary-dark dark:text-ternary-light"
-				>
-					{{ project.technologies[0].techs.join(', ') }}
-				</p>
+				<ul class="list-disc ml-7">
+					<li
+						class="list font-general-regular text-primary-dark dark:text-ternary-light"
+						v-for="tech in project.technologies[0].techs"
+						:key="tech"
+					>
+						{{ tech }}
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>

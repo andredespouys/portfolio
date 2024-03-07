@@ -1,5 +1,5 @@
 
-## The context of this project 🧑🏻‍💻
+### The context of this project 🧑🏻‍💻
 
 As part of my current Google Cybersecurity Certificate; inside the Network Attacks Module I was instructed to conduct an incident report.
 
@@ -8,7 +8,7 @@ The following document is a representation of how i would respond following a ne
 <hr style="opacity:1;color:#341677">
 
 
-## Ghost Company Incident Report 🧐
+### Ghost Company Incident Report 🧐
 
 I'm working on a normal day at Ghost Company, suddenly I receive an automated alert from our SIEM Tool indicating a problem with the web server. I attempte to visit the company’s website, but I receive a connection timeout error message in the browser.
 
@@ -45,7 +45,7 @@ connect.</li>
 So the multiple sending of SYN Packets the server not having enough resources or a correct DoS firewall set up, can cause the server to collapse and not be able to serve all the other requests made by other users and consequently throwing the **timeout error message**.
 
 
-## My recommendations 🛠️
+### My recommendations 🛠️
 
 DoS attack take down one of the pillars of the CIA triad - Availability. This concerns the company's reputation and daily operations, so fixing this and future lookalike errors is crucial for good business continuity.
 

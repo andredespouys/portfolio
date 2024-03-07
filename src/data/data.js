@@ -4,7 +4,7 @@
 const projects = [
 	{
 		id: 1,
-		path: "./src/data/projects/orange-app-development/index.md",
+		path: "src/data/projects/orange-app-development/index.md",
 		slug: 'orange-app-development',
 		header: {
 			title: 'Orange App Development',
@@ -36,7 +36,7 @@ const projects = [
 	},
 	{
 		id: 2,
-		path: "./src/data/projects/botium-toys/index.md",
+		path: "src/data/projects/botium-toys/index.md",
 		header: {
 			title: 'Botium Toys',
 			date: 'Jul 26, 2021',
@@ -71,7 +71,7 @@ const projects = [
 	},
 	{
 		id: 3,
-		path: "./src/data/projects/website-redesign/index.md",
+		path: "src/data/projects/website-redesign/index.md",
 		header: {
 			title: 'Website Redesign',
 			date: 'Jul 26, 2021',
@@ -105,7 +105,7 @@ const projects = [
 	,
 	{
 		id: 4,
-		path: "./src/data/projects/gendarmerie-nationale/index.md",
+		path: "src/data/projects/gendarmerie-nationale/index.md",
 		header: {
 			title: 'Gendarmerie Nationale',
 			date: 'Jul 26, 2021',
@@ -139,7 +139,7 @@ const projects = [
 	},
 	{
 		id: 5,
-		path: "./src/data/projects/incident-response/index.md",
+		path: "src/data/projects/incident-response/index.md",
 		header: {
 			title: 'Incident Response',
 			date: 'Jul 26, 2021',
@@ -172,7 +172,7 @@ const projects = [
 	},
 	{
 		id: 6,
-		path: "./src/data/projects/d-teye/index.md",
+		path: "src/data/projects/d-teye/index.md",
 		header: {
 			title: 'D-Teye',
 			date: 'Jul 26, 2021',
