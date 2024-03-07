@@ -63,7 +63,7 @@ Multiple controls need to be developed and implemented to meet the audit goals, 
 <li>Locking cabinets</li>
 <li>Signage indicating the alarm service provider</li>
 
-### Summary/Recommendations 🧐:
+### Recommendations 🧐:
 
 After this first internal audit on Botium Toys, there are certainly a lot of policies, controls, and procedures to put in place, but it is ok! We can fix them together.
 

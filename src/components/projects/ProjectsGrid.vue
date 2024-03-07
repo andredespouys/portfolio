@@ -105,6 +105,8 @@ console.log('searchProject', searchProject.value);
 			<div
 				class="
 					flex
+					flex-wrap
+
 					justify-between
 					border-b border-primary-light
 					dark:border-secondary-dark
@@ -112,11 +114,10 @@ console.log('searchProject', searchProject.value);
 					gap-2
 				"
 			>
-				<div class="flex justify-between gap-2">
+				<div class="w-full md:w-auto flex flex-grow ">
 					<span
 						class="
-							hidden
-							sm:block
+							block
 							bg-primary-light
 							dark:bg-ternary-dark
 							p-2.5
@@ -133,15 +134,13 @@ console.log('searchProject', searchProject.value);
 					<input
 						v-model="searchProject"
 						class="font-general-medium
-						pl-3
-						pr-1
-						sm:px-4
-						py-2
+						p-2
+						w-full
+						md:w-auto
 						border-1 border-gray-200
 						dark:border-secondary-dark
 						rounded-lg
 						text-sm
-						sm:text-md
 						bg-secondary-light
 						dark:bg-ternary-dark
 						text-primary-dark

@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { ref, onMounted, Ref , onBeforeMount, onUpdated} from 'vue';
 import feather from 'feather-icons';
-import ProjectHeader from '../components/projects/ProjectHeader.vue';
-import ProjectGallery from '../components/projects/ProjectGallery.vue';
-import ProjectInfo from '../components/projects/ProjectInfo.vue';
-import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects.vue';
-import ProjectDetails from '../components/projects/ProjectDetails.vue';
-
+import ProjectHeader from '@/components/projects/ProjectHeader.vue';
+import ProjectGallery from '@/components/projects/ProjectGallery.vue';
+import ProjectInfo from '@/components/projects/ProjectInfo.vue';
+import ProjectRelatedProjects from '@/components/projects/ProjectRelatedProjects.vue';
+import ProjectDetails from '@/components/projects/ProjectDetails.vue';
 import { marked } from 'marked';
-import projects from '../data/data.js';
+import projects from '@/data/data.js';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const project : Ref<any>= ref('');
@@ -18,8 +17,10 @@ const projectContent: Ref<any | HTMLBodyElement> = ref("");
 async function fetchContent(project : any) {
 	try {
 		// Fetch project content
-		// Add ../  to the path to fetch from the root directory
-		const response = await fetch("../" + project.path);
+        const path = `/src/data/projects/${project.slug}/index.md`;
+
+		const response = await fetch(path);
+		console.log("Response: ", response)
         if (!response.ok) {
         throw new Error(`Failed to fetch ${project.path}`);
         }
@@ -63,9 +64,9 @@ onUpdated(() => {
 	<div class="parent-container mt-10 sm:mt-20 md:flex-col ">
 		<div class="inner-container flex flex-col flex-start mx-auto  sm:mt-20 ">
 		<!-- Check if project exists before accessing its properties -->
-        <div v-if="project" class="flex flex-col items-center lg:flex-row gap-20 relative">
+        <div v-if="project" class="flex flex-col  lg:flex-row gap-20 relative">
             <!-- Project header -->
-			<div class="container-left flex flex-col flex-none w-full lg:w-1/3 h-full pt-10 lg:sticky top-0">
+			<div class="container-left flex flex-col flex-none w-full h-full pt-10 lg:w-1/3  lg:sticky top-0">
 				<ProjectHeader v-if="project.header" :header="project.header" />
 				<div v-else>
 					<h1>Project Header not found</h1>

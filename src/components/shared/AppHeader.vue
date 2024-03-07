@@ -4,6 +4,7 @@ import HireMeModal from '../HireMeModal.vue';
 import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
 import Button from '../reusable/Button.vue';
+import Burger from '../icons/Burger.vue';
 import { onMounted, onUpdated, onBeforeMount, Ref, ref } from 'vue';
 
 
@@ -31,7 +32,6 @@ function updateTheme(theme : any) {
 };
 
 function showModal() {
-	console.log("Contact me button triggered")
 	if (modal.value) {
 		console.log("Data modal true")
 		// Stop screen scrolling
@@ -47,6 +47,10 @@ function showModal() {
 
 		modal.value = true;
 	}
+};
+function toggle() {
+	isOpen.value = !isOpen.value;
+
 };
 </script>
 
@@ -85,31 +89,8 @@ function showModal() {
 				/>
 
 				<!-- Small screen hamburger menu -->
-				<div class="sm:hidden">
-					<Button
-						@click="isOpen = !isOpen"
-						type="button"
-						class="focus:outline-none"
-						aria-label="Hamburger Menu"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
-						>
-							<path
-								v-if="isOpen"
-								fill-rule="evenodd"
-								d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-								clip-rule="evenodd"
-							></path>
-							<path
-								v-if="!isOpen"
-								fill-rule="evenodd"
-								d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-							></path>
-						</svg>
-					</Button>
+				<div class="block  sm:hidden">
+					<Burger @click="toggle" class="burger" :theme="theme" :isOpen="isOpen" />
 				</div>
 			</div>
 

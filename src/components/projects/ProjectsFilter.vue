@@ -25,8 +25,9 @@ export default {
 		:name="select"
 		:id="select"
 		class="font-general-medium
-				px-4
-				py-2
+				p-2
+				w-full 
+				md:w-auto
 				border-1 border-gray-200
 				dark:border-secondary-dark
 				rounded-lg

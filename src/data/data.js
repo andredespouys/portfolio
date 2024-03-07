@@ -4,7 +4,7 @@
 const projects = [
 	{
 		id: 1,
-		path: "src/data/projects/orange-app-development/index.md",
+		path: "@/data/projects/orange-app-development/index.md",
 		slug: 'orange-app-development',
 		header: {
 			title: 'Orange App Development',
