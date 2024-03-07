@@ -4,7 +4,7 @@ import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 import { marked } from 'marked';
-import projects from '@/assets/data/data.js';
+import projects from 'content/data.js';
 
 interface ProjectContent {
   content: string;

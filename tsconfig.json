@@ -10,7 +10,8 @@
     /* Paths and Base URL */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "content/*": ["./content/*"],
     },
 
     /* Bundler mode */
