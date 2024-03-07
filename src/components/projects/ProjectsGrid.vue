@@ -4,7 +4,7 @@ import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 import { marked } from 'marked';
-import projects from '../../data/data.js';
+import projects from '@/assets/data/data.js';
 
 interface ProjectContent {
   content: string;
@@ -137,12 +137,13 @@ console.log('searchProject', searchProject.value);
 						p-2
 						w-full
 						md:w-auto
-						border-1 border-gray-200
+
+						border-1 border-gray-500
 						dark:border-secondary-dark
 						rounded-lg
 						text-sm
-						bg-secondary-light
-						dark:bg-ternary-dark
+						bg-transparent
+						border-b-1
 						text-primary-dark
 						dark:text-ternary-light
 						"
@@ -172,4 +173,4 @@ console.log('searchProject', searchProject.value);
 </template>
 
 
-<style scoped></style>
+<style scoped></style>../../assets/data/data.js

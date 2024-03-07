@@ -2,7 +2,7 @@
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 
-import { socialLinks } from '../data/socialLinks.js';
+import { socialLinks } from '@/assets/data/socialLinks.js';
 
 import { onMounted, onUpdated , ref} from 'vue';
 const theme = ref('');
@@ -126,4 +126,4 @@ onUpdated(() => {
 .fade-leave-to {
 	opacity: 0;
 }
-</style>
+</style>../assets/data/socialLinks.js
