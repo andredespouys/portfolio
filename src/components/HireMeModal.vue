@@ -2,7 +2,7 @@
 import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 
-import { socialLinks } from 'content/socialLinks';
+import { socialLinks } from '@/socialLinks';
 
 import { onMounted, onUpdated , ref} from 'vue';
 const theme = ref('');

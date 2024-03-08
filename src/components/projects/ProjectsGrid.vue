@@ -1,43 +1,18 @@
 <script setup lang="ts">
-import { ref, onMounted, Ref ,computed, onBeforeMount} from 'vue';
+import { ref, onMounted ,computed, onBeforeMount} from 'vue';
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
-import { marked } from 'marked';
-import projects from 'content/data.js';
+import projects from '@/data.js';
 
-interface ProjectContent {
-  content: string;
-};
-const projectsContent: Ref<ProjectContent[]> = ref([]);
+
 const projectsHeading = ref('My Projects');
 const selectedCategory = ref('');
 const searchProject = ref('');
 
 onBeforeMount(() => {
-	const fetchData = async () => {
-	try {
-		const projectsData = await Promise.all(
-			projects.map(async (project) => {
-			const response = await fetch(project.path);
-			if (!response.ok) {
-			throw new Error(`Failed to fetch ${project.path}`);
-			}
-			const markdownContent = await response.text();
-			const content = marked(markdownContent);
-			return {
-			content,
-			} as ProjectContent;
-		})
-		);
 
-		projectsContent.value = projectsData;
-	} catch (error) {
-		console.error(error);
-	}
-};
 
-	fetchData();
 	feather.replace();
 });
 

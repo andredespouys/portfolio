@@ -7,7 +7,7 @@ import ProjectInfo from '@/components/projects/ProjectInfo.vue';
 import ProjectRelatedProjects from '@/components/projects/ProjectRelatedProjects.vue';
 import ProjectDetails from '@/components/projects/ProjectDetails.vue';
 import { marked } from 'marked';
-import projects from 'content/data.js';
+import projects from '@/data.js';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const project : Ref<any>= ref('');
@@ -17,9 +17,7 @@ const projectContent: Ref<any | HTMLBodyElement> = ref("");
 async function fetchContent(project : any) {
 	try {
 		// Fetch project content
-        const path = `conntent/projects/${project.slug}/index.md`;
-
-		const response = await fetch(path);
+		const response = await fetch(project.slug + '/index.md');
 		console.log("Response: ", response)
         if (!response.ok) {
         throw new Error(`Failed to fetch ${project.path}`);
