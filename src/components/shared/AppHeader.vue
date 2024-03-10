@@ -11,8 +11,9 @@ const modal : Ref<boolean> = ref(false);
 const isOpen : Ref<boolean> = ref(false);
 const theme : Ref<string> = ref("");
 
-
-
+const emit = defineEmits<{
+  (e: 'theme-changed', newTheme: string): void
+}>()
 onBeforeMount(() => {
   	theme.value = localStorage.getItem('theme') || 'light';
 });
@@ -20,6 +21,7 @@ onBeforeMount(() => {
 function updateTheme(newtheme : any) {
 	console.log(theme);
 	theme.value = newtheme;
+	emit('theme-changed', newtheme);
 };
 
 function showModal() {
