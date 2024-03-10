@@ -15,8 +15,8 @@ onUpdated(() => {
 </script>
 
 <template>
-  <div class="block lg:flex sm:gap-10 w-full">
     <!-- Single project right section details -->
-      <div  class="w-full lg:w-full text-left mt-10 sm:mt-0 flex flex-col gap-4" v-html="props.content"></div>
-  </div>
+      <div v-html="props.content" 
+      class="text-pretty flex flex-col  leading-loose w-full lg:w-full text-left 
+      mt-0  gap-4" ></div>
 </template>

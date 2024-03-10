@@ -33,38 +33,50 @@ onUpdated(() => {
 
 <template>
 	<transition name="fade">
-		<div v-show="modal"  class= "font-general-regular fixed inset-0 z-30">
+		<div v-show="modal"  class= " font-general-regular fixed inset-0 z-30">
 			<!-- Modal body background as backdrop -->
 			<div
 				v-show="modal"
 				@click="showModal()"
-				class="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"
+				class="bg-filter  bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"
 			></div>
 			<!-- Modal content -->
 			<main
 				class="flex flex-col items-center justify-center h-full w-full"
 			>
-				<transition name="fade-up-down">
 					<div
 						v-show="modal"
-						:class="[theme === 'dark' ? 'bg-primary-dark' : 'bg-secondary-light','modal-wrapper', ' h-64',  'w-1/3 ', 'mx-auto', 'flex',  'flex-col', 'justify-around' ,'items-center' ,'p-5' , 'z-30' ]"
+						:class="
+						[theme === 'dark' ? 'bg-primary-dark' : 'bg-secondary-light']"
+						class="rounded-lg modal-wrapper w-3/4 md:w-1/3 mx-auto flex 
+						flex-col justify-around items-center p-5 z-30 h-auto
+						gap-5"
 					>
-
-							<div
-								class="modal-header flex justify-between  border-b w-full p-5 border-ternary-light dark:border-ternary-dark"
+						<div
+							class="relative w-full"
 							>
-								<h5
-									class="text-primary-dark dark:text-primary-light text-lg"
-								>
-									Contact me
-								</h5>
-								<button
-									class="px-4 text-primary-dark dark:text-primary-light"
-									@click="showModal()"
+							<button
+								class="text-primary-dark dark:text-primary-light absolute right-0 "
+								@click="showModal()"
 								>
 									<i data-feather="x"></i>
-								</button>
+							</button>
+						</div>
+
+						<div class="w-full md:w-1/2 text-right float-right">
+							<img src="/images/memoji-contact.png" alt="Developer" />
+						</div>
+							<div
+								class="modal-header  dark:border-ternary-dark"
+							>
+								<h3
+									class="text-primary-dark dark:text-primary-light  font-bold	"
+								>
+									Contact me
+								</h3>
+							
 							</div>
+						
 							<ul class="flex gap-4 sm:gap-8 w-full justify-around items-center">
 								<a
 									v-for="social in socials"
@@ -81,7 +93,6 @@ onUpdated(() => {
 							</ul>
 
 					</div>
-				</transition>
 			</main>
 		</div>
 	</transition>

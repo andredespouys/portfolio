@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-	<div class="block sm:gap-10 mt-12">
+	<div class="block sm:gap-10 ">
 		<div
-			class="mb-10 sm:mb-0"
+			class="m-0"
 			v-for="projectImage in images"
 			:key="projectImage.id"
 		>

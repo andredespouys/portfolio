@@ -14,11 +14,11 @@ export default {
 </script>
 
 <template>
-	<div class="block  sm:block gap-0 sm:gap-10 mt-14">
+	<div class="block ">
 		<!-- Single project left section details -->
 		<div class="w-full  text-left">
 			<!-- Single project client details -->
-			<div class="mb-7 w-full">
+			<div class=" w-full">
 				<p
 					class="font-bold font-general-medium text-2xl text-secondary-dark dark:text-secondary-light mb-2"
 				>

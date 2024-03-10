@@ -53,7 +53,7 @@ console.log('searchProject', searchProject.value);
 
 <template>
 	<!-- Projects grid -->
-	<section class="pt-10 sm:pt-14">
+	<section class="pt-10 sm:pt-14 p-4">
 		<!-- Projects grid title -->
 		<div class="text-center">
 			<p
@@ -148,4 +148,4 @@ console.log('searchProject', searchProject.value);
 </template>
 
 
-<style scoped></style>../../assets/data/data.js
+<style scoped></style>
