@@ -1,26 +1,17 @@
 <script setup lang="ts">
 import ThemeSwitcher from '../ThemeSwitcher.vue';
 import HireMeModal from '../HireMeModal.vue';
-import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
 import Button from '../reusable/Button.vue';
 import Burger from '../icons/Burger.vue';
-import { onMounted, onUpdated, onBeforeMount, Ref, ref } from 'vue';
+import { onBeforeMount, Ref, ref } from 'vue';
 
 
 const modal : Ref<boolean> = ref(false);
 const isOpen : Ref<boolean> = ref(false);
 const theme : Ref<string> = ref("");
 
-// onMounted(() => {
-// 	feather.replace();
-// 	theme.value = localStorage.getItem('theme') || 'light';
-// });
 
-// // onUpdated(() => {
-// // 	feather.replace();
-// // 	console.log("Modal value: ", modal.value)
-// // });
 
 onBeforeMount(() => {
   	theme.value = localStorage.getItem('theme') || 'light';
