@@ -59,7 +59,7 @@ function toggle() {
 	<nav id="nav" class=" sm:mx-auto">
 		<!-- Header start -->
 		<div
-			class="z-10 max-w-full-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
+			class="relative z-10 max-w-full-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6"
 		>
 			<!-- Header menu links and small screen hamburger menu -->
 			<div class="flex justify-between items-center px-4 sm:px-0">
@@ -85,7 +85,7 @@ function toggle() {
 				<theme-switcher
 					:theme="theme"
 					@themeChanged="updateTheme"
-					class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
+					class="block sm:hidden bg-secondary-light dark:bg-primary-dark  hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
 				/>
 
 				<!-- Small screen hamburger menu -->
@@ -95,7 +95,7 @@ function toggle() {
 			</div>
 
 			<!-- Header links -->
-			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" />
+			<AppHeaderLinks :showModal="showModal" :isOpen="isOpen" @linkClick="toggle" :theme="theme" />
 
 			<!-- Header right section buttons -->
 			<div

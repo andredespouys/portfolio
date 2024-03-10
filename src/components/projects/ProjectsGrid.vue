@@ -65,18 +65,17 @@ console.log('searchProject', searchProject.value);
 
 		<!-- Filter and search projects -->
 		<div class="mt-10 sm:mt-10">
-			<h3
+			<p
 				class="font-general-regular
 					text-center text-secondary-dark
 					dark:text-ternary-light
 					text-md
-					sm:text-xl
 					font-normal
 					mb-4
 				"
 			>
 				Search projects by title or filter by category
-			</h3>
+			</p>
 			<div
 				class="
 					flex
@@ -136,7 +135,7 @@ console.log('searchProject', searchProject.value);
 
 		<!-- Projects grid -->
 		<div
-			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10"
+			class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-6 "
 		>
 			<ProjectSingle
 				v-for="project in filteredProjects"
