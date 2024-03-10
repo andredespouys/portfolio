@@ -12,23 +12,23 @@ const modal : Ref<boolean> = ref(false);
 const isOpen : Ref<boolean> = ref(false);
 const theme : Ref<string> = ref("");
 
-onMounted(() => {
-	feather.replace();
-	theme.value = localStorage.getItem('theme') || 'light';
-});
+// onMounted(() => {
+// 	feather.replace();
+// 	theme.value = localStorage.getItem('theme') || 'light';
+// });
 
-onUpdated(() => {
-	feather.replace();
-	console.log("Modal value: ", modal.value)
-});
+// // onUpdated(() => {
+// // 	feather.replace();
+// // 	console.log("Modal value: ", modal.value)
+// // });
 
 onBeforeMount(() => {
   	theme.value = localStorage.getItem('theme') || 'light';
 });
 
-function updateTheme(theme : any) {
+function updateTheme(newtheme : any) {
 	console.log(theme);
-	theme = theme;
+	theme.value = newtheme;
 };
 
 function showModal() {
