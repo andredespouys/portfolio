@@ -1,24 +1,29 @@
-<script>
-export default {
-	props: {
-		theme: {
-			type: String,
-			required: true,
-		},
-	},
-	methods: {
-		toggleTheme() {
-			const newTheme = this.theme === 'light' ? 'dark' : 'light';
-			localStorage.setItem('theme', newTheme);
-			this.$emit('theme-changed', newTheme);
-			location.reload();
-		},
-	},
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+
+const theme = ref<string>('');
+theme.value = localStorage.getItem('theme') || 'light';
+
+const emit = defineEmits(['theme-changed']);
+
+// Method to toggle the theme
+const toggleTheme = () => {
+  const newTheme = theme.value === 'light' ? 'dark' : 'light';
+  emit('theme-changed', newTheme);
 };
+
+// Watch for changes in the theme prop
+onMounted(() => {
+	theme.value = localStorage.getItem('theme') || 'light';
+});
+
 </script>
 
+
+
+
 <template>
-	<a href="#" @click.prevent="toggleTheme" aria-label="Theme Switcher">
+	<button @click.stop="toggleTheme" aria-label="Theme Switcher">
 		<i
 			v-if="theme === 'light'"
 			data-feather="moon"
@@ -29,5 +34,5 @@ export default {
 			data-feather="sun"
 			class="text-gray-200 hover:text-gray-50 w-5"
 		></i>
-	</a>
+	</button>
 </template>

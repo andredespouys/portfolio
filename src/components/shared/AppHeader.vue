@@ -4,23 +4,24 @@ import HireMeModal from '../HireMeModal.vue';
 import AppHeaderLinks from './AppHeaderLinks.vue';
 import Button from '../reusable/Button.vue';
 import Burger from '../icons/Burger.vue';
-import { onBeforeMount, Ref, ref } from 'vue';
+import {  onMounted, Ref, ref } from 'vue';
 
 
 const modal : Ref<boolean> = ref(false);
 const isOpen : Ref<boolean> = ref(false);
 const theme : Ref<string> = ref("");
 
+
 const emit = defineEmits<{
   (e: 'theme-changed', newTheme: string): void
 }>()
-onBeforeMount(() => {
+onMounted(() => {
   	theme.value = localStorage.getItem('theme') || 'light';
 });
 
+
 function updateTheme(newtheme : any) {
-	console.log(theme);
-	theme.value = newtheme;
+	console.log("Theme changed to", newtheme);
 	emit('theme-changed', newtheme);
 };
 
@@ -77,7 +78,7 @@ function toggle() {
 				<!-- Theme switcher small screen -->
 				<theme-switcher
 					:theme="theme"
-					@themeChanged="updateTheme"
+					@theme-changed="updateTheme($event)"
 					class="block sm:hidden bg-secondary-light dark:bg-primary-dark  hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
 				/>
 
@@ -124,9 +125,5 @@ function toggle() {
 </template>
 
 <style scoped>
-#nav a.router-link-exact-active {
-	@apply text-indigo-700;
-	@apply dark:text-indigo-400;
-	@apply font-medium;
-}
+
 </style>

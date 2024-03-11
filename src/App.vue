@@ -1,38 +1,55 @@
 <!-- App.vue -->
 
 <script setup lang="ts">
-import feather from 'feather-icons';
 import AppHeader from '@/components/shared/AppHeader.vue';
 import AppFooter from '@/components/shared/AppFooter.vue';
-import { onMounted, onUpdated } from 'vue';
-import './assets/css/app.css';
+import { ref, onUpdated, onMounted } from 'vue';
 
+const appTheme = ref(localStorage.getItem('theme') || 'light');
 
-const appTheme = localStorage.getItem('theme') || 'light';
+// Apply theme class to body element
+const applyThemeClass = () => {
+  const body = document.body;
+  if (appTheme.value === 'dark') {
+    body.classList.add('bg-primary-dark');
+    body.classList.remove('bg-secondary-light');
+  } else {
+    body.classList.add('bg-secondary-light');
+    body.classList.remove('bg-primary-dark');
+  }
+};
 
+// Apply initial theme class on component mount
 onMounted(() => {
-  feather.replace();
+  applyThemeClass();
 });
 
+// Update theme class on theme change
 onUpdated(() => {
-  feather.replace();
+  applyThemeClass();
 });
+function handleChange(newTheme: string) {
+  appTheme.value = newTheme;
+  localStorage.setItem('theme', newTheme);
+}
 </script>
 
 <template>
-    <div :class="appTheme" class="p-5  md:p-20 mx-auto w-full xl:max-w-screen-xl  ">
-		<!-- App header -->
-		<AppHeader />
-			<router-view v-slot="{ Component }">
-			<transition name="fade" mode="out-in">
-				<component :is="Component" />
-			</transition>
-			</router-view>
-		<!-- App footer -->
-		<AppFooter />
-	</div>
-
+  <div :key="appTheme" :class="['p-5 md:p-20 mx-auto w-full xl:max-w-screen-xl']">
+    <!-- App header -->
+    <AppHeader :theme="appTheme" @theme-changed="handleChange" />
+    
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    
+    <!-- App footer -->
+    <AppFooter />
+  </div>
 </template>
+
 
 <style>
 #app {
@@ -40,17 +57,6 @@ onUpdated(() => {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
-}
-
-.vue-back-to-top {
-	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
-        duration-500
-        ease-in-out
-        transform
-        hover:-translate-y-1 hover:scale-110;
-	border-radius: 50%;
-	font-size: 22px;
-	line-height: 22px;
 }
 
 .fade-enter-active {
