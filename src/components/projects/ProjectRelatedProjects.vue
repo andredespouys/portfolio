@@ -38,7 +38,7 @@ export default {
 						</p>
 						<span
 							class="font-general-medium text-lg text-ternary-dark dark:text-ternary-light"
-							>{{ item.category }}</span
+							>{{ item.header.category }}</span
 						>
 					</div>
 				</router-link>

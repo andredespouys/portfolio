@@ -25,8 +25,8 @@ onUpdated(() => {
 			<h1 class="font-bold text-4xl md:text-3xl xl:text-4xl text-center text-ternary-dark dark:text-primary-light uppercase">
 				Hi, I am André
 			</h1>
-			<h3 class="text-2xl md:text-3xl text-center sm:text-left text-ternary-dark md:w-2/3 dark:text-primary-light ">
-				A passionate of the web and a future security analyst.			</h3>
+			<h2 class="text-2xl md:text-3xl text-center sm:text-left text-ternary-dark w-full dark:text-primary-light ">
+				A passionate of the web and a future security analyst.</h2>
 			<div class="flex justify-center ">
 				<a
 					download="André-Resume.pdf"

@@ -10,6 +10,7 @@ h2 {
 }
 h3 {
     font-size: 26px;
+    font-weight: bold;
 }
 .bg-primary-dark {
     background-color: #0d2438;

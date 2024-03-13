@@ -11,8 +11,9 @@ const projects = [
 			date: 'Jul 26, 2021',
 			tag: 'App Development',
 			category: 'App Development',
+
 		},
-		summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+		summary: 'Internship app development project at Orange',
 		images: [
 			{
 				id: 1,
@@ -24,12 +25,8 @@ const projects = [
 			{
 				title: 'Tools & Technologies',
 				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'Excel Macros',
+					'Visual Basic',
 				],
 			},
 		],
@@ -41,12 +38,12 @@ const projects = [
 			title: 'Botium Toys',
 			date: 'Jul 26, 2021',
 			tag: 'UI / Frontend',
-			category: 'Web Development',
+			category: 'Cybersecurity',
+
 
 
 		},
 		slug: 'botium-toys',
-		category: 'Cybersecurity',
 		images: [
 			{
 				id: 1,
@@ -54,17 +51,15 @@ const projects = [
 				img: '/images/botium-toys-1.jpg',
 			},
 		],
-		summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+		summary: 'Google Cybersecurity Certificate project ',
 		technologies: [
 			{
-				title: 'Tools & Technologies',
+				title: 'Skills developed',
 				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'Security Audit',
+					'Asset Security',
+					'Writtig Communication'
+					
 				],
 			},
 		],
@@ -73,13 +68,14 @@ const projects = [
 		id: 3,
 		path: "/projects/website-redesign/index.md",
 		header: {
-			title: 'Website Redesign',
+			title: 'Le Vieux Monastère',
 			date: 'Jul 26, 2021',
 			tag: 'UX/UI Design',
-			category: 'UX/UI Design',
+			category: 'App Development',
+
 
 		},
-		slug: 'website-redesign',
+		slug: 'lvm',
 		images: [
 			{
 				id: 1,
@@ -87,17 +83,14 @@ const projects = [
 				img: '/images/lvm-laptop.png',
 			},
 		],
-		summary:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
+		summary: 'CRM Develoment from scratch',
 		technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
-					'HTML',
+					'Google Apps Script',
 					'CSS',
 					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
 				],
 			},
 		],
@@ -121,17 +114,13 @@ const projects = [
 				img: '/images/gendarmerie.jpg',
 			},
 		],
-		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
+		summary: 'A cybersecurity oriented school project',
 		technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'PandaSuite',
+					'Figma',
 				],
 			},
 		],
@@ -155,17 +144,15 @@ const projects = [
 				img: '/images/incident-report.jpg',
 			},
 		],
-		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
+		summary: "A small Google's cybersecurity certificate project",
 		technologies: [
 			{
 				title: 'Tools & Technologies',
 				techs: [
-					'HTML',
-					'CSS',
-					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'Wireshark',
+					'SIEM Tools',
+					'Google Docs',
+					'Google Sheets',
 				],
 			},
 		],
@@ -188,7 +175,7 @@ const projects = [
 				img: '/images/d-teye.png',
 			},
 		],
-		summary: "This winter, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
+		summary: "In the winter of 2022, during the cybersecurity week at my university, I and my classmates had the pleasure and privilege to work with the National Gendarmerie (Bordeaux) to create two digital solutions to help gendarmerie professionals and civilian communities from the many everyday cybersecurity threats, risks and vulnerabilities that everyone is concerned about.",
 		technologies: [
 			{
 				title: 'Tools & Technologies',
@@ -196,9 +183,8 @@ const projects = [
 					'HTML',
 					'CSS',
 					'JavaScript',
-					'Vue.js',
-					'TailwindCSS',
-					'AdobeXD',
+					'Next.js',
+					'Github'
 				],
 			},
 		],

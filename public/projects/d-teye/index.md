@@ -1,11 +1,11 @@
 
 ### The context 🧑🏻‍💻
 
-Each year my University: University Institute of Technology - <a href="https://www.iut.u-bordeaux.fr/general/" style="text-decoration:underline;color:blue">**IUT Bordeaux Montaigne </a>** and the <a href="https://www.musba-bordeaux.fr/" style="text-decoration:underline;color:blue">**Musée de Beaux Arts de Bordeaux</a>** create an special night where the digital world and art come together called <a href="https://www.u-bordeaux-montaigne.fr/fr/actualites/culture/bacchanight-8-nocturne-au-musee-des-beaux-arts-une-soiree-par-et-pour-les-etudiants.html" style="text-decoration:underline;">**Bacchanight**</a>. The purpose of this event is to invite students to revisit and reinterpret the museum's permanent collections and temporary exhibitions and in our case, doing it using the digital world.
+Each year my University - <a href="https://www.iut.u-bordeaux.fr/general/" style="text-decoration:underline;color:#164b77">**IUT Bordeaux Montaigne </a>** and the <a href="https://www.musba-bordeaux.fr/" style="text-decoration:underline;color:#164b77">**Musée de Beaux Arts de Bordeaux</a>** create an special night where the digital world and art come together called <a href="https://www.u-bordeaux-montaigne.fr/fr/actualites/culture/bacchanight-8-nocturne-au-musee-des-beaux-arts-une-soiree-par-et-pour-les-etudiants.html" style="text-decoration:underline;color:#164b77">**Bacchanight**</a>. The purpose of this event is to invite students to revisit and reinterpret the museum's permanent collections and temporary exhibitions and in our case, doing it using the digital world.
 
 ### What did we develop? 🤓
 
-With my group called <a href="https://allela-ed132b.webflow.io/" style="text-decoration:underline;color:blue">Allela</a> (also a freelance collective), we developed D-Teye.
+With my group called <a href="https://allela-ed132b.webflow.io/" style="text-decoration:underline;color:#164b77">Allela</a> (also a freelance collective), we developed D-Teye.
 
 <b>What’s that?</b>
 
@@ -26,7 +26,7 @@ In addition, I wanted to put my touch on it by putting a Cybersecurity related t
 
 The experience was incredible,  I learned a lot and probably will be a **Part II** of this one.
 
-## See the project here, it’s in french so good luck or should I say...
+# See the project here, it’s in french so good luck or should I say...
 
 ## Bonne chance😜
 
