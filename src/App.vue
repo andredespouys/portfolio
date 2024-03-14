@@ -28,6 +28,8 @@ onMounted(() => {
 onUpdated(() => {
   applyThemeClass();
 });
+
+// Handle theme change
 function handleChange(newTheme: string) {
   appTheme.value = newTheme;
   localStorage.setItem('theme', newTheme);

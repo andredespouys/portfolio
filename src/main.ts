@@ -5,6 +5,8 @@ import router from './router';
 
 import './index.css';
 import feather from 'feather-icons';
+
+
 feather.replace();
 
 const app = createApp(App).use(router);
