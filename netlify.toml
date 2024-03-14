@@ -4,3 +4,18 @@
 from = "/projects"
 to = "/index.html"
 status = 200
+
+
+# Rewrite a path
+[[redirects]]
+from = "/about"
+to = "/index.html"
+status = 200
+
+
+# Rewrite a path
+[[redirects]]
+from = "/projects/:slug"
+to = "/index.html"
+status = 200
+
