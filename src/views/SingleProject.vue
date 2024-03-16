@@ -7,7 +7,7 @@ import ProjectInfo from '@/components/projects/ProjectInfo.vue';
 import ProjectRelatedProjects from '@/components/projects/ProjectRelatedProjects.vue';
 import ProjectDetails from '@/components/projects/ProjectDetails.vue';
 import { marked } from 'marked';
-import projects from '@/data.js';
+import projects from '@/projects.js';
 import { useRoute } from 'vue-router';
 const route = useRoute();
 const project : Ref<any>= ref('');

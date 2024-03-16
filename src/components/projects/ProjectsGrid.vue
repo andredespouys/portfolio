@@ -3,7 +3,7 @@ import { ref, onMounted ,computed, onBeforeMount} from 'vue';
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
-import projects from '@/data.js';
+import projects from '@/projects.js';
 
 
 const projectsHeading = ref('My Projects');

@@ -83,7 +83,7 @@ function toggle() {
 				/>
 
 				<!-- Small screen hamburger menu -->
-				<div class="block  sm:hidden">
+				<div class="block  md:hidden">
 					<Burger @click="toggle" class="burger" :theme="theme" :isOpen="isOpen" />
 				</div>
 			</div>
@@ -97,8 +97,8 @@ function toggle() {
 			>
 				<!-- Hire me button -->
 				<div class="hidden md:block">
-					<Button
-						title="Contact Me"
+					<Button kind="internal"
+						label="Contact Me"
 						class="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 						@click="showModal()"
 						aria-label="Contact Me Button"

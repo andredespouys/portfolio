@@ -9,7 +9,7 @@ export default {
 	<!-- Header links -->
 	<div
     :class="[isOpen ? 'block' : 'hidden', (theme === 'dark') ? 'bg-primary-dark' : 'bg-secondary-light']"
-    class="w-full sm:w-auto rounded-lg absolute md:relative z-3 m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
+    class="w-full sm:w-auto rounded-lg absolute md:relative z-3 m-0 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none"
 >
 		<router-link
 			to="/projects"
