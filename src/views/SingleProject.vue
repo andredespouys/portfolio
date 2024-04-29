@@ -82,11 +82,14 @@ onUpdated(() => {
 				<div class="inner-container right flex-auto pt-10 lg:pt-0 ">
 					<!-- Project information -->
 					<ProjectInfo v-if="projectContent"  :content="projectContent" />
+					<a v-if="project.link" class="block mt-4 p-4 bg-indigo-500 text-white font-medium rounded-lg w-fit" :href="project.link.url">{{ project.link.title }}</a>
+
 					<div v-else>
 						<h1>Project info not found</h1>
 					</div>
+
 				</div>
-				<a v-if="project.link" class="p-4 bg-indigo-500 text-white font-medium rounded-lg w-fit" :href="project.link.url">{{ project.link.title }}</a>
+
 
 			</div>
 			<div v-else>
