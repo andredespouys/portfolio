@@ -86,11 +86,15 @@ onUpdated(() => {
 						<h1>Project info not found</h1>
 					</div>
 				</div>
+				<a v-if="project.link" class="p-4 bg-indigo-500 text-white font-medium rounded-lg w-fit" :href="project.link.url">{{ project.link.title }}</a>
+
 			</div>
 			<div v-else>
 				<h1>Project not found</h1>
 			</div>
+			
 		</div>
+
 		<!-- Project related projects -->
 		<ProjectRelatedProjects v-if="relatedProjects" :relatedProjects="relatedProjects" />
 		<div v-else>

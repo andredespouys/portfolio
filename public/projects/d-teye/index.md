@@ -5,7 +5,7 @@ Each year my University - <a href="https://www.iut.u-bordeaux.fr/general/" style
 
 ### What did we develop? 🤓
 
-With my group called <a href="https://allela-ed132b.webflow.io/" style="text-decoration:underline;color:#164b77">Allela</a> (also a freelance collective), we developed D-Teye.
+With my group called <a href="https://www.collectif-allela.com/" style="text-decoration:underline;color:#6366f1">Allela</a> (also a freelance collective), we developed D-Teye.
 
 <b>What’s that?</b>
 

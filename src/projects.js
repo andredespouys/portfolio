@@ -1,6 +1,7 @@
 // Projects data.
 // Note: Here we are getting data from a js file, but in a different project I'll be fetching these projects from some srt of APIs.
 
+
 const projects = [
 	{
 		id: 1,
@@ -8,12 +9,13 @@ const projects = [
 		slug: 'orange-app-development',
 		header: {
 			title: 'Orange App Development',
-			date: 'Jul 26, 2021',
+			date: 'July 2021',
 			tag: 'App Development',
 			category: 'App Development',
 
 		},
 		summary: 'Internship app development project at Orange',
+	
 		images: [
 			{
 				id: 1,
@@ -36,12 +38,9 @@ const projects = [
 		path: "/projects/botium-toys/index.md",
 		header: {
 			title: 'Botium Toys',
-			date: 'Jul 26, 2021',
+			date: 'September 2023',
 			tag: 'UI / Frontend',
 			category: 'Cybersecurity',
-
-
-
 		},
 		slug: 'botium-toys',
 		images: [
@@ -69,11 +68,15 @@ const projects = [
 		path: "/projects/website-redesign/index.md",
 		header: {
 			title: 'Le Vieux Monastère',
-			date: 'Jul 26, 2021',
+			date: 'September 2023',
 			tag: 'UX/UI Design',
 			category: 'App Development',
 
 
+		},
+		link : {
+			title: 'View Project',
+			url: 'https://www.levieuxmonastere.com'
 		},
 		slug: 'lvm',
 		images: [
@@ -101,7 +104,7 @@ const projects = [
 		path: "/projects/gendarmerie-nationale/index.md",
 		header: {
 			title: 'Gendarmerie Nationale',
-			date: 'Jul 26, 2021',
+			date: 'February 2023',
 			tag: 'App Development',
 			category: 'App Development',
 
@@ -131,7 +134,7 @@ const projects = [
 		path: "/projects/incident-response/index.md",
 		header: {
 			title: 'Incident Response',
-			date: 'Jul 26, 2021',
+			date: 'October 2023',
 			tag: 'Cybersecurity',
 			category: 'Cybersecurity',
 
@@ -162,10 +165,14 @@ const projects = [
 		path: "/projects/d-teye/index.md",
 		header: {
 			title: 'D-Teye',
-			date: 'Jul 26, 2021',
+			date: 'March 2023',
 			tag: 'Web Development',
 			category: 'Web Development',
 
+		},
+		link : {
+			title: 'View Project',
+			url: 'https://bacchanight-d-teye.vercel.app/'
 		},
 		slug: 'd-teye',
 		images: [
@@ -185,6 +192,143 @@ const projects = [
 					'JavaScript',
 					'Next.js',
 					'Github'
+				],
+			},
+		],
+	},
+	{
+		id: 7,
+		path: "/projects/allela/index.md",
+		header: {
+			title: 'Allela',
+			date: 'January 2023',
+			tag: 'Web Development',
+			category: 'Web Development',
+
+		},
+		link : {
+			title: 'View Project',
+			url: 'https://www.collectif-allela.com/'
+		},
+		slug: 'allela',
+		images: [
+			{
+				id: 1,
+				title: 'allela-image1',
+				img: '/images/allela.png',
+			},
+		],
+		summary: "Description of my side-project Allela.", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Webflow',
+					'Figma',
+					'JavaScript',
+				],
+			},
+		],
+	},
+	{
+		id: 8,
+		path: "/projects/musba/index.md",
+		header: {
+			title: 'Musba Experience 2024',
+			date: 'March 2024',
+			tag: 'Web Development',
+			category: 'Web Development',
+
+		},
+		slug: 'musba',
+		link : {
+			title: 'View Project',
+			url: 'https://nuit-du-musba.mmibordeaux.com/'
+		},
+		images: [
+			{
+				id: 1,
+				title: 'musba-image1',
+				img: '/images/logo_musba.jpeg',
+			},
+		],
+		summary: "Huge school project developed with Three.js", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Three.js',
+					'Javascript',
+					'HTML',
+					'CSS',
+				],
+			},
+		],
+	},
+	{
+		id: 9,
+		path: "/projects/samiras-journey/index.md",
+		header: {
+			title: "Samira's Journey",
+			date: 'March 2024',
+			tag: 'Web Development',
+			category: 'Web Development',
+
+		},
+		link : {
+			title: 'View Project',
+			url: 'https://1-samira.les-voix-errantes-de-kyiv.fr/'
+		},
+		slug: 'samiras-journey',
+		images: [
+			{
+				id: 1,
+				title: 'samira1',
+				img: '/images/samira1.png',
+			},
+		],
+		summary: "School project developed with Three.js", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Three.js',
+					'Javascript',
+					'HTML',
+					'CSS',
+				],
+			},
+		],
+	},
+	{
+		id: 9,
+		path: "/projects/samiras-journey/index.md",
+		header: {
+			title: "Le jeu Allela",
+			date: 'March 2024',
+			tag: 'Videogame Development',
+			category: 'Videogame Development',
+
+		},
+		link : {
+			title: 'View Project',
+			url: 'https://effortless-kelpie-6bc42f.netlify.app/'
+		},
+		slug: 'jeu-allela',
+		images: [
+			{
+				id: 1,
+				title: 'Jeu Allela',
+				img: '/images/allela-jeu-1.png',
+			},
+		],
+		summary: "School video game project developed with Unity & C#", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Unity',
+					'C#'
 				],
 			},
 		],
