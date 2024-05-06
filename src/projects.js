@@ -333,6 +333,73 @@ const projects = [
 			},
 		],
 	},
+	{
+		id: 10,
+		path: "/projects/symbié/index.md",
+		header: {
+			title: "Symbié Magazine",
+			date: 'April 2024',
+			tag: 'Web Development',
+			category: 'Web Development',
+
+		},
+		link : {
+			title: 'See Project',
+			url: 'https://symbie.netlify.app/'
+		},
+		slug: 'symbie',
+		images: [
+			{
+				id: 1,
+				title: 'Symbié Magazine',
+				img: '/images/symbie3.png',
+			},
+		],
+		summary: "Independant magazine project developed with Three.js", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Three.js',
+					'TypeScript',
+					'HTML',
+					'CSS',
+				],
+			},
+		],
+	},
+	{
+		id: 11,
+		path: "/projects/password_manager/index.md",
+		header: {
+			title: "My Own Password Manager",
+			date: 'February 2024',
+			tag: 'Cybersecurity',
+			category: 'Cybersecurity',
+
+		},
+		link : {
+			title: 'See Github Repository',
+			url: 'https://github.com/andredespouys/password-manager'
+		},
+		slug: 'password_manager',
+		images: [
+			{
+				id: 1,
+				title: 'My Own Password Manager',
+				img: '/images/password1.png',
+			},
+		],
+		summary: "My own password manager developed with Python ", 
+		technologies: [
+			{
+				title: 'Tools & Technologies',
+				techs: [
+					'Python',
+				],
+			},
+		],
+	},
 ];
 
 export default projects;
